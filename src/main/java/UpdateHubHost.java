@@ -13,7 +13,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 
-public class GitHubHost {
+public class UpdateHubHost {
 
     public static final String AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36";
     public static final String HEADER = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9";
@@ -24,7 +24,7 @@ public class GitHubHost {
     public List<String> failUrl = new ArrayList<>();
 
     public static void main(String[] args) throws InterruptedException {
-        new GitHubHost().start();
+        new UpdateHubHost().start();
     }
 
     public void start() throws InterruptedException {
