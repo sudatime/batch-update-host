@@ -73,9 +73,9 @@ public class UpdateHubHost {
     private  List<String> getProperties() {
         FileReader fileReader;
         try {
-            fileReader = FileReader.create(new File("config.txt"), StandardCharsets.UTF_8);
+            fileReader = FileReader.create(new File(CONFIG_NAME), StandardCharsets.UTF_8);
         } catch (Exception e) {
-            System.out.println("Configuration read failed or configuration does not exist ! ==>> config.txt");
+            System.out.println("Configuration read failed or configuration does not exist ! ==>> ".concat(CONFIG_NAME));
             return new ArrayList<>();
         }
         // 排除掉注释
