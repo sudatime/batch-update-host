@@ -53,8 +53,6 @@ public class WriteHost {
         startList.add("#\t\t\t\t\t\tUpdate time : " + DateUtil.now());
         startList.add(END);
         startList.addAll(endList);
-        // 末尾加上换行
-        startList.add("\n");
         // 回写
         hostWriter.writeLines(startList);
         System.out.println("write host success.......");
